@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: idroid;
+  src: url('../fonts/idroid.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --primary-color: #c5ebd6;
+  --second-color: #83e1ad;
+  --light-green: #3ddc84;
+  --dark-green: #2fa866;
+  --greenish-black: #063d1e;
+
+  /* fonts */
+  --title-font: 'Bebas Neue', cursive;
+  --emphasis-font: idroid, cursive;
+  --paragraph-font: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+/* Geral config */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--paragraph-font);
+}
+
+main {
+  min-width: 40rem;
+  max-width: 80rem;
+  margin: auto;
+}
+
+/* ====== Header ====== */
+header {
+  text-align: center;
+  color: white;
+
+  padding: 1rem;
+
+  background-image: linear-gradient(180deg, var(--dark-green), var(--greenish-black));
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.267);
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  font-size: 4.8rem;
+  font-weight: normal;
+
+  margin-bottom: 2rem;
+}
+
+header p {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  margin-inline: auto;
+  width: min(46rem, 100%);
+}
+
+header h1, header p {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.54);
+}
+
+#menu {
+  text-align: left;
+  font-size: 1.6em;
+}
+
+#menu a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+  padding: 1rem;
+
+  transition: 250ms;
+}
+
+#menu a:hover {
+  background-color: var(--light-green);
+  color: var(--greenish-black);
+  border-radius: 0.6rem;
+}
+
+/* ====== Principal ====== */
+#principal {
+  background-color: white;
+
+  font-size: 1.6rem;
+
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.8rem;
+
+  box-shadow: 0px 4px 10px #00000044;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#principal h1{
+  font-size: 2.5rem;
+  font-family: var(--emphasis-font);
+  font-weight: normal;
+  color:var(--greenish-black);
+
+  padding: 2rem 2rem 0;
+  margin-bottom: 1rem;
+}
+
+#principal p {
+  text-align: justify;
+  text-indent: 2.5rem;
+  line-height: 2.8rem;
+  
+
+  margin: 2rem;
+}
+
+#principal strong {
+  color: var(--dark-green);
+}
+
+#principal h2 {
+  font-size: 2rem;
+  font-family: var(--emphasis-font);
+  font-weight: normal;
+  text-indent: 0.8rem;
+  
+  color: var(--greenish-black);
+  background-image: linear-gradient(90deg, var(--second-color), transparent);
+  
+  margin: 1rem 2rem;
+}
+
+#principal a {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-weight: bold;
+
+  background-color: var(--primary-color);
+  padding: 0.2rem 0.6rem;
+}
+
+#principal a:hover {
+  text-decoration: underline;
+  color: var(--light-green);
+}
+
+.external::after {
+  content: '\0020\1f517\0020';
+}
+
+img {
+  display: block;
+
+  width: 100%;
+  padding: 0 2rem;
+  margin: 4rem 0;
+}
+
+#bugdroid {
+  height: 18rem;
+  width: 20rem;
+  margin: auto;
+}
+
+/* ====== Video ====== */
+.video {  
+  width: 100%;
+  height: 100vh;
+
+  padding: 3rem 5rem;
+
+  background-color: var(--greenish-black);
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ====== More ====== */
+#more {
+  background-color: var(--second-color);
+  margin: 2rem;
+  padding-bottom: 1rem;
+
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px #0000003f;
+}
+
+#more h3 {
+  color: white;
+  background-color: var(--dark-green);
+  
+  padding: 1rem;
+
+  border-radius: 10px 10px 0 0;
+}
+
+#more ul {
+  list-style-type: '\2714\0020\0020';  /* U+2714 - código do símbolo | 0020 - espaço em branco (também pode ser 00A0) */
+  columns: 2;
+  list-style-position: inside;  /* coloca os marcadores detro da caixa da lista */
+  padding-inline: 2rem;
+}
+
+/*====== Footer ====== */
+footer {
+  background-color: var(--greenish-black);
+  color: white;
+
+  font-size: 1.4rem;
+  text-align: center;
+
+  padding: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--second-color);
+}
