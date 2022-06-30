@@ -157,7 +157,7 @@ header h1, header p {
 }
 
 .external::after {
-  content: '\0020\1f517\0020';
+  content: '\0020\1f517';
 }
 
 img {
@@ -191,7 +191,7 @@ img {
 
   top: 5%;
   left: 5%;
-  
+
   width: 90%;
   height: 90%;
 }
